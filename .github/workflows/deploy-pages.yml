@@ -1,0 +1,39 @@
+name: Publish LFA app
+on:
+  push:
+    branches: [main]
+    paths:
+      - lfa-image-processing-publication.zip
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify and unpack approved public package
+        run: |
+          echo "706012ebf4d0cfc3b975b3bdd63be53addc48c2c43f3212249e38b190572c98f  lfa-image-processing-publication.zip" | sha256sum --check
+          mkdir site
+          unzip -q lfa-image-processing-publication.zip -d site
+          test -f site/index.html
+          test -f site/single_lfa.wasm
+          test "$(find site -type f | wc -l)" -eq 136
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
