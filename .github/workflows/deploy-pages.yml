@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: Verify and unpack approved public package
         run: |
-          echo "915a0b7489c5d8ff0097cd39300e8e9c5f9708169a80a548ecf32d151cdd98ef  lfa-image-processing-publication.zip" | sha256sum --check
+          echo "7f73b689b1f19aeac2b46ab7873263b7d742af51cc5ceb5db70cbd2196bfe478  lfa-image-processing-publication.zip" | sha256sum --check
           mkdir site
           unzip -q lfa-image-processing-publication.zip -d site
           test -f site/index.html
