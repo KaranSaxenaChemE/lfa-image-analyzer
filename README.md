@@ -8,10 +8,9 @@ and [Bhushan Toley](https://www.linkedin.com/in/bhushantoley/),
 
 **[Open the app](https://karansaxenacheme.github.io/lfa-image-analyzer/)**
 
-One workflow—from LFA images to quantitative results. Bring image processing,
-signal measurements, replicate statistics and calibration together in your browser.
-Reduce repetitive manual measurements and transfers between separate software
-tools, while keeping your experimental images and analysis data on your own computer.
+One workflow—from LFA images to quantitative results.
+
+Tired of juggling image-analysis tools such as ImageJ, spreadsheets such as Excel, and coding tools (MATLAB, Python or R) for your LFA image and data analysis? This app brings those steps together in one unified workflow. Upload your images, choose your settings and run the analysis to get Test and Control measurements—or, for batch experiments, replicate statistics, calibration curves and calculated LoD. Your experimental images and analysis data stay on your own computer.
 
 ## Single LFA analysis
 
