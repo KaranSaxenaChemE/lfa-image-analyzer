@@ -51,8 +51,12 @@ before using the results. Add experimental notes before saving the PDF or HTML f
 
 Both notebooks have **Save analysis as HTML** beside each PDF button. The saved
 HTML embeds images, vector plots, complete tables, settings, experimental notes
-and full analysis data for offline viewing. It does not rerun calculations or
-load the app. Files can be large when many images and figures are included.
+and full analysis data in an interactive offline notebook. The saved file keeps
+the left-side section menu, figure SVG and table CSV downloads, PDF saving and
+editable experimental notes. Choose **Save updated HTML** to keep note edits in
+a new file. Analysis settings and results stay locked; new calculations require
+the app. No connection is needed to view or use the saved notebook's controls.
+Files can be large when many images and figures are included.
 
 ## Use and citation
 
