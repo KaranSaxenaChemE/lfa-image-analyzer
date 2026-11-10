@@ -22,7 +22,7 @@ Tired of juggling image-analysis tools such as ImageJ, spreadsheets such as Exce
 - **Channel selection:** use automatic RGB selection or choose Red, Green, Blue, Grayscale or Contrast-Adjusted Grayscale.
 - **Crop and inspect:** select the strip region and review channel profiles, shaded peaks and the profile aligned with the image.
 - **Visible checks:** review input errors, detection warnings and measured values before using the results.
-- **Save your results:** export measurement tables, editable SVG figures and an analysis PDF with experimental notes.
+- **Save your results:** export measurement tables, editable SVG figures and an analysis PDF or self-contained HTML file with experimental notes.
 
 ## Batch LFA analysis
 
@@ -36,7 +36,7 @@ Tired of juggling image-analysis tools such as ImageJ, spreadsheets such as Exce
 - **Six calibration models:** four-parameter logistic, five-parameter logistic, Hill, Langmuir, linear and two-term exponential.
 - **Two LoD calculation methods:** choose between direction-aware, blank-based methods for sandwich and competitive responses.
 - **Inspect the analysis:** review individual-strip diagnostics, replicate statistics, model equations, fitted coefficients, goodness-of-fit statistics and warnings.
-- **Refit and export:** change the signal metric or calibration model without reprocessing images; export complete CSV tables, editable SVG figures, publication-formatted calibration plots and a notebook PDF.
+- **Refit and export:** change the signal metric or calibration model without reprocessing images; export complete CSV tables, editable SVG figures, publication-formatted calibration plots and a notebook PDF or self-contained HTML file.
 
 ## Inputs and interfaces
 
@@ -47,7 +47,12 @@ Replicates use uppercase Roman numerals. The included example strip is synthetic
 
 Single and Batch analysis open in the Notebook Interface; a separate Single App
 Interface is also available. Review diagnostic figures, input checks and warnings
-before using the results. Add experimental notes before saving the PDF.
+before using the results. Add experimental notes before saving the PDF or HTML file.
+
+Both notebooks have **Save analysis as HTML** beside each PDF button. The saved
+HTML embeds images, vector plots, complete tables, settings, experimental notes
+and full analysis data for offline viewing. It does not rerun calculations or
+load the app. Files can be large when many images and figures are included.
 
 ## Use and citation
 
