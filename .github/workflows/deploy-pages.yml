@@ -24,12 +24,12 @@ jobs:
       - uses: actions/checkout@v6
       - name: Verify and unpack approved public package
         run: |
-          echo "67777c032a974ab8291a310d3af6455054e893d0dc7ff17ff93cd96d084b7bc8  lfa-image-processing-publication.zip" | sha256sum --check
+          echo "43474fb6f420016523517034c14f9114d7bd1f2b3966ac46924734fcc381027d  lfa-image-processing-publication.zip" | sha256sum --check
           mkdir site
           unzip -q lfa-image-processing-publication.zip -d site
           test -f site/index.html
           test -f site/single_lfa.wasm
-          test "$(find site -type f | wc -l)" -eq 142
+          test "$(find site -type f | wc -l)" -eq 145
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
